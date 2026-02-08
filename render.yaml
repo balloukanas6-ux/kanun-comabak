@@ -1,0 +1,37 @@
+services:
+  - type: worker
+    name: bot-kanun
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: BOT_PREFIX
+        value: "!"
+      - key: STAFF_ROLE_NAME
+        value: "Staff"
+      - key: LOG_CHANNEL_NAME
+        value: "log"
+      - key: TICKET_CATEGORY_NAME
+        value: "Tickets"
+      - key: CATEGORY_ID_BRACCIO_ARMATO
+        sync: false
+      - key: CATEGORY_ID_INFORMATIVA
+        sync: false
+      - key: CATEGORY_ID_PARTNER
+        sync: false
+      - key: PANEL_CHANNEL_ID
+        sync: false
+      - key: WELCOME_CHANNEL_ID
+        sync: false
+      - key: WELCOME_TITLE
+        value: "Benvenuto!"
+      - key: WELCOME_SUBTITLE
+        value: "Leggi le regole e apri un ticket se hai bisogno"
+      - key: WELCOME_THUMBNAIL_URL
+        sync: false
+      - key: WELCOME_BANNER_URL
+        sync: false

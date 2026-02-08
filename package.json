@@ -1,0 +1,18 @@
+{
+  "name": "bot-kanun",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bot Discord: ticket, ruoli, log canali/ruoli/join/sposta/delete",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "engines": {
+    "node": ">=18 <22"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
