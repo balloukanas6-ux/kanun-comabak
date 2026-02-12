@@ -1,6 +1,6 @@
 services:
   - type: worker
-    name: bot-kanun
+    name: BOT-HZSTLE
     runtime: node
     buildCommand: npm install
     startCommand: npm start
